@@ -183,6 +183,7 @@ def animate_operators(operators, date):
     count = 1
 
     for i in operators:
+        i = unicode(i, 'utf-8')
         i = i.encode('utf-8')
         print i, count, "/", length
         try:
